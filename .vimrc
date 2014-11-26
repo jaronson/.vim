@@ -10,7 +10,8 @@ colorscheme solarized
 let mapleader=","
 let maplocalleader=","
 let g:mapleader=","
-let g:Powerline_symbols = 'unicode'
+let g:Powerline_symbols='unicode'
+let g:localvimrc_ask=0
 
 nmap <silent> <leader>c :tabnew<CR>
 nmap <silent> <leader>t :tabnext<CR>
