@@ -1,19 +1,25 @@
+set nocompatible
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 execute pathogen#infect()
-syntax enable
 filetype plugin indent on
-set background=dark
+syntax enable
+
 colorscheme solarized
 
 let mapleader=","
 let maplocalleader=","
+let g:mapleader=","
+let g:Powerline_symbols = 'unicode'
 
 nmap <silent> <leader>c :tabnew<CR>
 nmap <silent> <leader>t :tabnext<CR>
 nmap <silent> <leader>p :tabprev<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
+set t_Co=256
+set background=dark
 set noerrorbells
-set nocompatible
 set showmatch
 set expandtab
 set tabstop=2
