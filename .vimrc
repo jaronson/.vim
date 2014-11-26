@@ -44,16 +44,6 @@ set wildignore=*.swp,*.bak,*.pyc
 set pastetoggle=<F2>
 command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 
-" Filetypes
-au BufRead,BufNewFile *.ejs       set filetype=html
-au BufRead,BufNewFile *.html      set filetype=html
-au BufRead,BufNewFile *.rvmrc     set filetype=sh
-au BufRead,BufNewFile *.css_t     set filetype=css
-au BufRead,BufNewFile *.py        set tabstop=4
-au BufRead,BufNewFile *.py        set shiftwidth=4
-au BufRead,BufNewFile *.go        set noexpandtab
-au BufRead,BufNewFile *.tmuxrc    set filetype=screen
-
 " Format xml files by default
 au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 
