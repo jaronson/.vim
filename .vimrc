@@ -21,6 +21,10 @@ nmap <silent> <leader>t :tabnext<CR>
 nmap <silent> <leader>p :tabprev<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
+
 set background=dark
 
 set t_Co=256
