@@ -6,7 +6,8 @@ let maplocalleader=","
 let g:mapleader=","
 let g:Powerline_symbols='unicode'
 let g:localvimrc_ask=0
-let g:indentLine_char='┆'
+"let g:indentLine_char='┆'
+let g:indentLine_char='|'
 let g:indentLine_color_term=0
 let NERDTreeShowHidden=1
 
