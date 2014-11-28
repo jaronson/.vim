@@ -6,7 +6,6 @@ let maplocalleader=","
 let g:mapleader=","
 let g:Powerline_symbols='unicode'
 let g:localvimrc_ask=0
-"let g:indentLine_char='┆'
 let g:indentLine_char='|'
 let g:indentLine_color_term=0
 let NERDTreeShowHidden=1
@@ -16,15 +15,6 @@ filetype plugin indent on
 syntax enable
 
 colorscheme solarized
-
-nmap <silent> <leader>c :tabnew<CR>
-nmap <silent> <leader>t :tabnext<CR>
-nmap <silent> <leader>p :tabprev<CR>
-nmap <silent> <leader>/ :nohlsearch<CR>
-
-map  <C-l> :tabn<CR>
-map  <C-h> :tabp<CR>
-map  <C-n> :tabnew<CR>
 
 set background=dark
 
@@ -51,15 +41,13 @@ set autoindent
 set copyindent
 set wildignore=*.swp,*.bak,*.pyc
 set pastetoggle=<F2>
+
 command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 
 " Format xml files by default
-au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
+" au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 
 iabbrev rpry require 'pry'; binding.pry
-
-" Start NERDTree on start
-" autocmd VimEnter * NERDTree
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
@@ -72,3 +60,19 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 end
+
+nmap <silent> <leader>c :tabnew<CR>
+nmap <silent> <leader>t :tabnext<CR>
+nmap <silent> <leader>p :tabprev<CR>
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
+
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>a> :Tabularize /=><CR>
+vmap <Leader>a> :Tabularize /=><CR>
