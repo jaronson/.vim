@@ -5,6 +5,7 @@ let mapleader=","
 let maplocalleader=","
 let g:mapleader=","
 let g:Powerline_symbols='unicode'
+let g:airline_powerline_fonts=1
 let g:localvimrc_ask=0
 let g:indentLine_char='|'
 let g:indentLine_color_term=0
