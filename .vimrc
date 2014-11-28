@@ -17,7 +17,6 @@ syntax enable
 colorscheme solarized
 
 set background=dark
-
 set t_Co=256
 set noerrorbells
 set showmatch
@@ -41,6 +40,8 @@ set autoindent
 set copyindent
 set wildignore=*.swp,*.bak,*.pyc
 set pastetoggle=<F2>
+set splitbelow
+set splitright
 
 command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 
@@ -76,3 +77,6 @@ nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
 nmap <Leader>a> :Tabularize /=><CR>
 vmap <Leader>a> :Tabularize /=><CR>
+
+nmap <Leader>m :MRU<CR>
+vmap <Leader>m :MRU<CR>
