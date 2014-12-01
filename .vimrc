@@ -16,9 +16,8 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-colorscheme solarized
+colorscheme flattown
 
-set background=dark
 set t_Co=256
 set noerrorbells
 set showmatch
