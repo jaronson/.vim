@@ -9,6 +9,7 @@ let g:airline_powerline_fonts=1
 let g:localvimrc_ask=0
 let g:indentLine_char='|'
 let g:indentLine_color_term=0
+let g:indentLine_noConcealCursor=""
 let NERDTreeShowHidden=1
 
 execute pathogen#infect()
@@ -76,8 +77,8 @@ nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
-nmap <Leader>a> :Tabularize /=><CR>
-vmap <Leader>a> :Tabularize /=><CR>
+nmap <Leader>a. :Tabularize /=><CR>
+vmap <Leader>a. :Tabularize /=><CR>
 
 nmap <Leader>m :MRU<CR>
 vmap <Leader>m :MRU<CR>
