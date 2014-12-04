@@ -45,9 +45,8 @@ set splitbelow
 set splitright
 
 command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
-
-" Format xml files by default
-" au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
+command FmtXML exe "%!xmllint --format --recover - 2>/dev/null"
+command FmtJSON exe "%!jq '.'"
 
 iabbrev rpry require 'pry'; binding.pry
 
