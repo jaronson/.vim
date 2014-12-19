@@ -73,10 +73,16 @@ map  <C-n> :tabnew<CR>
 
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
+nmap <Leader>a: :Tabularize /^[^:]*:<CR>
+vmap <Leader>a: :Tabularize /^[^:]*:<CR>
 nmap <Leader>a. :Tabularize /=><CR>
 vmap <Leader>a. :Tabularize /=><CR>
+nmap <Leader>a{ :Tabularize / \zs{<CR>
+vmap <Leader>a{ :Tabularize / \zs{<CR>
 
 nmap <Leader>m :MRU<CR>
 vmap <Leader>m :MRU<CR>
+
+nmap <Leader>et Iexpect(<ESC>A).to 
+nmap <Leader>ete Iexpect(<ESC>A).to eq()<ESC>i
+nmap <Leader>it Iit '<ESC>A' do<CR>
