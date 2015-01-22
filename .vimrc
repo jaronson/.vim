@@ -49,6 +49,7 @@ command FmtXML exe "%!xmllint --format --recover - 2>/dev/null"
 command FmtJSON exe "%!jq '.'"
 
 iabbrev rpry require 'pry'; binding.pry
+iabbrev ipdb import pdb; pdb.set_trace()
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
