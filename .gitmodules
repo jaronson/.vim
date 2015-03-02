@@ -28,9 +28,6 @@
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = https://github.com/rstacruz/sparkup.git
-[submodule "bundle/vim-javascript-syntax"]
-	path = bundle/vim-javascript-syntax
-	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
@@ -52,3 +49,6 @@
 [submodule "bundle/vim-cpp-enhanced-highlight"]
 	path = bundle/vim-cpp-enhanced-highlight
 	url = git@github.com:octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/vim-gradle"]
+	path = bundle/vim-gradle
+	url = git@github.com:tfnico/vim-gradle.git
