@@ -52,3 +52,6 @@
 [submodule "bundle/vim-gradle"]
 	path = bundle/vim-gradle
 	url = git@github.com:tfnico/vim-gradle.git
+[submodule "bundle/vim-colors-solarized.git"]
+	path = bundle/vim-colors-solarized.git
+	url = git@github.com:altercation/vim-colors-solarized.git
