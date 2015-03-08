@@ -3,6 +3,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader=","
 let maplocalleader=","
+let NERDTreeShowHidden=1
 let g:mapleader=","
 let g:Powerline_symbols='unicode'
 let g:airline_powerline_fonts=1
@@ -10,13 +11,16 @@ let g:localvimrc_ask=0
 let g:indentLine_char='|'
 let g:indentLine_color_term=0
 let g:indentLine_noConcealCursor=""
-let NERDTreeShowHidden=1
+let g:cpp_class_scope_highlight=1
+let g:cpp_experimental_template_highlight=1
 
 execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-colorscheme flattown
+"colorscheme flattown
+colorscheme solarized
+set background=dark
 
 set t_Co=256
 set noerrorbells
@@ -80,6 +84,8 @@ nmap <Leader>a. :Tabularize /=><CR>
 vmap <Leader>a. :Tabularize /=><CR>
 nmap <Leader>a{ :Tabularize / \zs{<CR>
 vmap <Leader>a{ :Tabularize / \zs{<CR>
+nmap <Leader>as :Tabularize /\S\+<CR>
+vmap <Leader>as :Tabularize /\S\+<CR>
 
 nmap <Leader>m :MRU<CR>
 vmap <Leader>m :MRU<CR>

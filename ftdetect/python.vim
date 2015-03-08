@@ -1,2 +1,2 @@
-au BufRead,BufNewFile *.py set tabstop=4
-au BufRead,BufNewFile *.py set shiftwidth=4
+au BufRead,BufNewFile *.py setlocal tabstop=4
+au BufRead,BufNewFile *.py setlocal shiftwidth=4
