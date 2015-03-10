@@ -47,6 +47,7 @@ set wildignore=*.swp,*.bak,*.pyc
 set pastetoggle=<F2>
 set splitbelow
 set splitright
+set colorcolumn=80
 
 command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 command FmtXML exe "%!xmllint --format --recover - 2>/dev/null"
