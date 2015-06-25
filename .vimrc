@@ -18,9 +18,10 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-"colorscheme flattown
-colorscheme solarized
-set background=dark
+colorscheme flattown
+" colorscheme solarized
+" set background=light
+" let g:indentLine_color_term=14
 
 set t_Co=256
 set noerrorbells
@@ -53,7 +54,7 @@ command! -bar -range=% Trim :<line1>,<line2>s/\s\+$//e
 command FmtXML exe "%!xmllint --format --recover - 2>/dev/null"
 command FmtJSON exe "%!jq '.'"
 
-iabbrev rpry require 'pry'; binding.pry
+iabbrev rpry require 'pry'; binding.pry;
 iabbrev ipdb import pdb; pdb.set_trace()
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
