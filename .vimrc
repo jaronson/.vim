@@ -8,9 +8,6 @@ let g:mapleader=","
 let g:Powerline_symbols='unicode'
 let g:airline_powerline_fonts=1
 let g:localvimrc_ask=0
-let g:indentLine_char='|'
-let g:indentLine_color_term=239
-let g:indentLine_noConcealCursor=""
 let g:cpp_class_scope_highlight=1
 let g:cpp_experimental_template_highlight=1
 
@@ -19,9 +16,9 @@ filetype plugin indent on
 syntax enable
 
 colorscheme flattown
-" colorscheme solarized
-" set background=light
-" let g:indentLine_color_term=14
+ " colorscheme solarized
+ " set background=light
+ " let g:indentLine_color_term=14
 
 set t_Co=256
 set noerrorbells
@@ -96,3 +93,5 @@ nmap <Leader>et Iexpect(<ESC>A).to
 nmap <Leader>ete Iexpect(<ESC>A).to eq()<ESC>i
 nmap <Leader>it Iit '<ESC>A' do<CR>
 nmap <Leader>jb :call JsBeautify()<cr>
+
+nmap <Leader>f :CtrlP<CR>
