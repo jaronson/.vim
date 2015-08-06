@@ -1,4 +1,6 @@
 set nocompatible
+set ttyfast
+set lazyredraw
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader=","
@@ -13,15 +15,16 @@ let g:cpp_experimental_template_highlight=1
 let g:indentLine_color_term = 239
 let g:indentLine_color_tty_light = 7 " (default: 4)
 let g:indentLine_color_dark = 1 " (default: 2)
+let g:ruby_path="/Users/jaronson/.rbenv/shims/ruby"
 
 execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
 colorscheme flattown
- " colorscheme solarized
- " set background=light
- " let g:indentLine_color_term=14
+" colorscheme solarized
+" set background=light
+" let g:indentLine_color_term=14
 
 set t_Co=256
 set noerrorbells
