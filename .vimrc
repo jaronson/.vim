@@ -10,6 +10,9 @@ let g:airline_powerline_fonts=1
 let g:localvimrc_ask=0
 let g:cpp_class_scope_highlight=1
 let g:cpp_experimental_template_highlight=1
+let g:indentLine_color_term = 239
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
 
 execute pathogen#infect()
 filetype plugin indent on
