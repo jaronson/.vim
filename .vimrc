@@ -16,6 +16,7 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_tty_light = 7 " (default: 4)
 let g:indentLine_color_dark = 1 " (default: 2)
 let g:ruby_path="/Users/jaronson/.rbenv/shims/ruby"
+" let g:syntastic_javascript_checkers = ['eslint']
 
 execute pathogen#infect()
 filetype plugin indent on
@@ -98,6 +99,9 @@ vmap <Leader>m :MRU<CR>
 nmap <Leader>et Iexpect(<ESC>A).to 
 nmap <Leader>ete Iexpect(<ESC>A).to eq()<ESC>i
 nmap <Leader>it Iit '<ESC>A' do<CR>
+
 nmap <Leader>jb :call JsBeautify()<cr>
 
 nmap <Leader>f :CtrlP<CR>
+
+nmap <Leader>da "=strftime("%c")<CR>P

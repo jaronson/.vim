@@ -9,3 +9,4 @@ au BufRead,BufNewFile Berksfile   set filetype=ruby
 au BufRead,BufNewFile Thorfile    set filetype=ruby
 au BufRead,BufNewFile *.pill      set filetype=ruby
 au BufRead,BufNewFile *.god       set filetype=ruby
+au BufRead,BufNewFile *.cap       set filetype=ruby
