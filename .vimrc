@@ -1,7 +1,7 @@
 set nocompatible
 set ttyfast
 set lazyredraw
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader=","
 let maplocalleader=","
