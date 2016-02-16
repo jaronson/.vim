@@ -52,6 +52,3 @@
 [submodule "bundle/swift.vim"]
 	path = bundle/swift.vim
 	url = git@github.com:keith/swift.vim.git
-[submodule "vim-slim"]
-	path = vim-slim
-	url = git://github.com/slim-template/vim-slim.git
