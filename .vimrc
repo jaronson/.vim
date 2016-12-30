@@ -22,10 +22,10 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-colorscheme flattown
-" colorscheme solarized
-" set background=light
-" let g:indentLine_color_term=14
+" colorscheme flattown
+colorscheme solarized
+set background=light
+let g:indentLine_color_term=14
 
 set t_Co=256
 set noerrorbells
