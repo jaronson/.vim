@@ -105,3 +105,7 @@ nmap <Leader>jb :call JsBeautify()<cr>
 nmap <Leader>f :CtrlP<CR>
 
 nmap <Leader>da "=strftime("%c")<CR>P
+
+nmap <Leader>d "_d
+vmap <Leader>d "_d
+vnoremap <leader>p "_dP
